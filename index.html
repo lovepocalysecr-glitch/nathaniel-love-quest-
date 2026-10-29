@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#ffe7f0">
+<title>Husband's Love Quest ♡ Level 7</title>
+<style>
+:root{--pink:#ff6fa7;--hot:#f04f91;--pale:#fff0f6;--cream:#fffafd;--ink:#62384e;--muted:#9a7184;--line:#ffd2e3;--white:#fff}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;background:radial-gradient(circle at 10% 5%,#fff 0 7%,transparent 28%),linear-gradient(145deg,#fff7fb,#ffe5f0 58%,#fff5fa);color:var(--ink);font-family:ui-rounded,"Trebuchet MS",system-ui,-apple-system,sans-serif}
+button{font:inherit;cursor:pointer}
+.wrap{width:min(100% - 28px,620px);margin:0 auto;padding:22px 0 40px}
+.top{text-align:center;padding:12px 6px 20px}
+.eyebrow{display:inline-block;border:1px solid var(--line);background:#ffffffb8;border-radius:999px;padding:7px 12px;color:var(--hot);font-size:.78rem;font-weight:800;letter-spacing:.08em}
+h1{font-size:clamp(2rem,8vw,3.25rem);line-height:1.03;margin:15px 0 9px;letter-spacing:-.05em;color:#df4e8d}
+h1 span{display:block;color:var(--ink);font-size:.58em;letter-spacing:-.025em;margin-top:8px}
+.subtitle{max-width:420px;margin:0 auto;color:var(--muted);line-height:1.6}
+.card{background:#ffffffd9;border:1px solid #fff;box-shadow:0 14px 40px #d64e8715;border-radius:26px;padding:clamp(18px,5vw,28px);margin:12px 0}
+.progress-row{display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:.82rem;color:var(--muted);font-weight:800}
+.track{height:8px;border-radius:99px;background:#ffe4ef;overflow:hidden;margin:12px 0 20px}
+.fill{height:100%;width:0;background:linear-gradient(90deg,#ff9bc2,#f04f91);border-radius:99px;transition:width .25s}
+.q-label{font-size:.78rem;text-transform:uppercase;letter-spacing:.1em;color:var(--hot);font-weight:900}
+h2{font-size:1.35rem;line-height:1.3;margin:9px 0 17px}
+.options{display:grid;gap:10px}
+.option{width:100%;text-align:left;padding:14px 15px;border-radius:16px;border:1.5px solid var(--line);background:#fffafd;color:var(--ink);transition:.15s}
+.option:hover{border-color:var(--pink);transform:translateY(-1px)}
+.option.selected{background:#ffe5f0;border-color:var(--hot);box-shadow:0 0 0 2px #ffb5d0 inset}
+.option:disabled{cursor:default;opacity:1}
+.feedback{min-height:24px;margin:13px 0 2px;font-weight:800;color:var(--hot);font-size:.92rem}
+.btn{border:0;border-radius:999px;padding:13px 19px;background:linear-gradient(110deg,#ff86b7,#f04f91);color:white;font-weight:900;box-shadow:0 8px 18px #f04f9133}
+.btn:focus-visible,.option:focus-visible,.gift:focus-visible{outline:3px solid #b72d6b;outline-offset:3px}
+.btn.secondary{background:white;color:var(--hot);border:1px solid var(--line);box-shadow:none}
+.btn:disabled{opacity:.45;cursor:not-allowed}
+.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
+.center{text-align:center}
+.heart{font-size:2.2rem;animation:pulse 1.3s infinite}
+@keyframes pulse{50%{transform:scale(1.12)}}
+.hidden{display:none!important}
+.score{display:inline-flex;align-items:center;gap:6px;background:#fff0f6;border:1px solid var(--line);border-radius:999px;padding:8px 12px;color:var(--hot);font-weight:900}
+.gifts{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:20px 0}
+.gift{border:1px solid #ffc4db;border-radius:20px;min-height:118px;background:linear-gradient(145deg,#fff,#ffe8f2);color:#e84e91;padding:12px 5px;font-size:2rem;box-shadow:0 8px 18px #e84e9112;transition:.18s}
+.gift span{display:block;font-size:.74rem;font-weight:900;margin-top:7px;color:var(--ink)}
+.gift:hover{transform:translateY(-3px) rotate(-1deg)}
+.gift.opened{background:#fff4d8;border-color:#ffd77c}
+.message{background:linear-gradient(145deg,#fff7fb,#ffe8f2);border:1px dashed #ff9fc4;border-radius:20px;padding:20px;text-align:left;line-height:1.75;white-space:pre-line}
+.small{font-size:.83rem;color:var(--muted);line-height:1.6}
+.editbox{background:#fff8fb;border:1px dashed var(--line);padding:14px;border-radius:16px;text-align:left}
+label{font-size:.84rem;font-weight:900;display:block;margin:12px 0 6px}
+input,textarea{width:100%;font:inherit;color:var(--ink);border:1px solid var(--line);border-radius:12px;padding:11px;background:#fff;outline-color:var(--pink)}
+textarea{min-height:80px;resize:vertical}
+footer{text-align:center;color:#b48b9d;font-size:.78rem;padding:10px}
+.sparkles{color:#f17cab;letter-spacing:.3em}
+@media(min-width:520px){.gifts{gap:14px}.gift{min-height:135px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div class="eyebrow">♡ A LITTLE ANNIVERSARY SURPRISE ♡</div>
+    <h1>HUSBAND'S LOVE QUEST <span>LEVEL 7 UNLOCKED 🎀</span></h1>
+    <p class="subtitle">A tiny game made with love by your wife. Complete the quest, collect your love points, and unlock a little secret. 💌</p>
+  </header>
+
+  <main>
+    <section class="card" id="intro">
+      <div class="center"><div class="heart">💗</div><h2>Are you ready, husband?</h2>
+      <p>Welcome to your very official, very serious, absolutely-not-suspicious anniversary mission.</p>
+      <p class="small">Mission date: <strong>29 March — 29 October 2026</strong><br>Objective: answer a few silly questions and choose your mystery gift.</p>
+      <button class="btn" id="startBtn">Start the quest ♡</button></div>
+    </section>
+
+    <section class="card hidden" id="quiz">
+      <div class="progress-row"><span id="qCount">QUESTION 1 OF 7</span><span class="score">♡ <span id="score">0</span> points</span></div>
+      <div class="track"><div class="fill" id="progress"></div></div>
+      <div class="q-label">Husband certification test</div>
+      <h2 id="question"></h2>
+      <div class="options" id="options"></div>
+      <div class="feedback" id="feedback" aria-live="polite"></div>
+      <div class="actions"><button class="btn" id="nextBtn" disabled>Next question →</button></div>
+      <p class="small">Psst… the questions can be customized by your wife before sending this game.</p>
+    </section>
+
+    <section class="card hidden center" id="results">
+      <div class="heart">🏆</div><h2>Quest completed, husband!</h2>
+      <p>You earned <span class="score"><span id="finalScore">0</span> love points ♡</span></p>
+      <p id="resultLine">Your wife is proud of you. Obviously. She has excellent taste.</p>
+      <button class="btn" id="toGifts">Unlock your mystery gift 🎁</button>
+    </section>
+
+    <section class="card hidden center" id="giftStage">
+      <div class="eyebrow">BONUS ROUND</div><h2>Choose one mystery box, husband!</h2>
+      <p class="small">Choose carefully. (Actually, there is no wrong answer. Your wife likes you too much.)</p>
+      <div class="gifts">
+        <button class="gift" data-gift="0" aria-label="Open mystery gift one">🎁<span>BOX ONE</span></button>
+        <button class="gift" data-gift="1" aria-label="Open mystery gift two">🎀<span>BOX TWO</span></button>
+        <button class="gift" data-gift="2" aria-label="Open mystery gift three">💝<span>BOX THREE</span></button>
+      </div>
+      <div id="giftReveal" class="message hidden" aria-live="polite"></div>
+      <div class="actions" style="justify-content:center"><button class="btn hidden" id="endingBtn">Open the final secret ♡</button></div>
+    </section>
+
+    <section class="card hidden" id="ending">
+      <div class="center"><div class="heart">💌</div><div class="eyebrow">LEVEL 7: COMPLETE</div><h2>Seven months, one favorite person.</h2></div>
+      <div class="message" id="finalMessage"></div>
+      <p class="small center">Made with love by your wife, for her husband. ♡</p>
+      <div class="actions"><button class="btn" id="copyBtn">Copy anniversary message</button><button class="btn secondary" id="againBtn">Play again ↻</button></div>
+      <p id="copyStatus" class="feedback" aria-live="polite"></p>
+    </section>
+
+    <section class="card" id="customize">
+      <h2>💌 Make it yours before sending</h2>
+      <p class="small">Edit these fields so the game feels like your relationship. Changes are saved only in this page while it is open. Fill in real details—nothing personal is invented for you.</p>
+      <div class="editbox">
+        <label for="wifeName">Wife's name / nickname</label><input id="wifeName" value="wife" maxlength="35">
+        <label for="husbandName">Husband's name / nickname</label><input id="husbandName" value="husband" maxlength="35">
+        <label for="dateText">Anniversary date</label><input id="dateText" value="29 March — 29 October 2026" maxlength="70">
+        <label for="q1">Question 1 — what is your anniversary date?</label><input id="q1" value="29 March" maxlength="100">
+        <label for="q2">Question 2 — what is one nickname your wife uses for you?</label><input id="q2" value="Edit this with a real nickname" maxlength="100">
+        <label for="q3">Question 3 — what is your wife's favorite thing about you?</label><input id="q3" value="Edit this with something true about you two" maxlength="120">
+        <label for="q4">Question 4 — what kind of couple are you?</label><input id="q4" value="A little silly, a little cheesy, very us" maxlength="120">
+        <label for="q5">Question 5 — choose your date-night activity</label><input id="q5" value="A long chat together" maxlength="120">
+        <label for="q6">Question 6 — what does your wife want most?</label><input id="q6" value="More happy memories together" maxlength="120">
+        <label for="q7">Question 7 — who is the birthday-level VIP today?</label><input id="q7" value="My favorite husband, obviously" maxlength="120">
+        <label for="secret">Secret ending message</label><textarea id="secret" maxlength="1200">happy 7th mensiversary, my husband. ♡
+
+thank you for being part of my days and for making this little corner of our world feel special. seven months with you is a milestone I wanted to celebrate in a way that feels like us.
+
+even when we're far apart, I’m grateful for every conversation, every laugh, and every little moment we get to share. I hope we keep learning each other, choosing kindness, and making more memories at our own pace.
+
+this is your tiny digital gift from your wife. no expensive present could replace the meaning of the moments we create together.
+
+happy seven months, husband. here's to the next chapter of us. i love you. 💗</textarea>
+        <div class="actions"><button class="btn" id="applyBtn">Apply my edits ♡</button><button class="btn secondary" id="resetEdits">Reset text</button></div>
+      </div>
+      <p class="small">Note: quiz answers are playful sample answers. Customize them to match your real memories before sending. The game does not upload answers or collect personal information.</p>
+    </section>
+  </main>
+  <footer><div class="sparkles">✧ ♡ ✧</div> Made for one husband, by one wife · 29.10.2026</footer>
+</div>
+<script>
+(() => {
+  const $ = id => document.getElementById(id);
+  const defaults = {
+    wifeName:"wife", husbandName:"husband", dateText:"29 March — 29 October 2026",
+    q1:"29 March", q2:"Edit this with a real nickname",
+    q3:"Edit this with something true about you two",
+    q4:"A little silly, a little cheesy, very us",
+    q5:"A long chat together", q6:"More happy memories together",
+    q7:"My favorite husband, obviously",
+    secret:$("secret").value
+  };
+  // Generic choices are intentionally editable; the correct answer is the text in each field.
+  let custom = {...defaults}, current = 0, points = 0, chosen = false, chosenGift = null;
+  let questions = [];
+  const optionSets = [
+    ["29 March","14 February","31 December"],
+    ["Edit this with a real nickname","Your Majesty, ruler of socks","Sir Professional Napper"],
+    ["Edit this with something true about you two","His ability to turn into a potato","His talent for stealing imaginary snacks"],
+    ["A little silly, a little cheesy, very us","Always serious, never joking","Two strangers who dislike chatting"],
+    ["A long chat together","A competition to fold laundry","A silent staring contest"],
+    ["More happy memories together","A lifetime supply of broccoli","To win every argument forever"],
+    ["My favorite husband, obviously","The Wi-Fi router","A suspiciously handsome potato"]
+  ];
+  let answerIndexes = [0,0,0,0,0,0,0];
+  const gifts = [
+    "🎟️ REWARD UNLOCKED: One (1) imaginary VIP pass to your wife's attention. Valid for unlimited silly messages and absolutely no refunds. ♡",
+    "🍰 REWARD UNLOCKED: One virtual cake for the husband of the month. Calories: zero. Cuteness: dangerously high.",
+    "💌 REWARD UNLOCKED: A tiny reminder that someone is happy to call you her husband. Please collect one (1) forehead-kiss coupon in your imagination."
+  ];
+  function show(id){["intro","quiz","results","giftStage","ending"].forEach(x=>$(x).classList.toggle("hidden",x!==id));}
+  function buildQuestions(){
+    questions = [
+      {q:"When did our story officially begin?", opts:[custom.q1,"14 February","31 December"], answer:0, feedback:"Correct date, husband! ♡"},
+      {q:"Which nickname belongs in your wife's message? (Edit the first option!)",opts:[custom.q2,"Your Majesty, ruler of socks","Sir Professional Napper"],answer:0,feedback:"Your wife has a very specific vocabulary for you. 😌"},
+      {q:"What is one thing your wife loves about you? (Customize the first option!)",opts:[custom.q3,"His talent for stealing imaginary snacks","His ability to turn into a potato"],answer:0,feedback:"Aww. Your wife knows what she likes. 💗"},
+      {q:"Pick the vibe that best describes your couple.",opts:[custom.q4,"Two strangers who dislike chatting","Always serious, never joking"],answer:0,feedback:"That sounds like the two of you! 🎀"},
+      {q:"Choose your ideal online date.",opts:[custom.q5,"A silent staring contest","A competition to fold laundry"],answer:0,feedback:"Date-night plans: officially approved. 💌"},
+      {q:"What does your wife hope to make with you?",opts:[custom.q6,"A lifetime supply of broccoli","To win every argument forever"],answer:0,feedback:"One little memory at a time. ♡"},
+      {q:"Who is today's VIP?",opts:[custom.q7,"The Wi-Fi router","A suspiciously handsome potato"],answer:0,feedback:"Correct. Please accept your imaginary crown, husband. 👑"}
+    ];
+  }
+  function renderQuestion(){
+    chosen=false; $("nextBtn").disabled=true; $("feedback").textContent="";
+    const item=questions[current]; $("qCount").textContent=`QUESTION ${current+1} OF ${questions.length}`;
+    $("question").textContent=item.q; $("score").textContent=points;
+    $("progress").style.width=`${(current/questions.length)*100}%`;
+    const host=$("options");host.innerHTML="";
+    item.opts.forEach((txt,i)=>{const b=document.createElement("button");b.className="option";b.textContent=String.fromCharCode(65+i)+". "+txt;b.addEventListener("click",()=>{
+      if(chosen)return;chosen=true;
+      [...host.children].forEach(el=>el.disabled=true);
+      b.classList.add("selected");points+=i===item.answer?10:3;$("score").textContent=points;
+      $("feedback").textContent=i===item.answer?item.feedback:"Bonus points for trying, husband. Your wife still adores you. ♡";
+      $("nextBtn").disabled=false;$("nextBtn").textContent=current===questions.length-1?"See my results →":"Next question →";
+    });host.appendChild(b);});
+  }
+  function syncFields(){Object.keys(defaults).forEach(k=>{if($(k))custom[k]=$(k).value.trim()||defaults[k];});buildQuestions();}
+  function applyNames(){
+    document.querySelectorAll(".subtitle").forEach(el=>el.textContent=`A tiny game made with love by ${custom.wifeName}. Complete the quest, collect your love points, and unlock a little secret. 💌`);
+    document.querySelector(".top h1").innerHTML=`${escapeHTML(custom.husbandName.toUpperCase())}'S LOVE QUEST <span>LEVEL 7 UNLOCKED 🎀</span>`;
+    $("dateText").value=custom.dateText;
+    $("finalMessage").textContent=custom.secret.replaceAll("happy 7th mensiversary, my husband.",`happy 7th mensiversary, ${custom.husbandName}.`);
+    $("intro").querySelector(".small").innerHTML=`Mission date: <strong>${escapeHTML(custom.dateText)}</strong><br>Objective: answer a few silly questions and choose your mystery gift. 💌`;
+  }
+  function escapeHTML(s){return s.replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));}
+  $("startBtn").addEventListener("click",()=>{syncFields();applyNames();current=0;points=0;show("quiz");renderQuestion();$("quiz").scrollIntoView({behavior:"smooth",block:"start"});});
+  $("nextBtn").addEventListener("click",()=>{if(!chosen)return;current++;if(current<questions.length){renderQuestion();}else{$("progress").style.width="100%";$("finalScore").textContent=points;$("resultLine").textContent=points>=60?"S+ husband certification unlocked. Your wife is absolutely bragging about you. 💗":"Quest completed! Your wife is proud of you for showing up and playing. ♡";show("results");}});
+  $("toGifts").addEventListener("click",()=>{show("giftStage");$("giftStage").scrollIntoView({behavior:"smooth",block:"start"});});
+  document.querySelectorAll(".gift").forEach(btn=>btn.addEventListener("click",()=>{
+    if(chosenGift!==null)return;chosenGift=Number(btn.dataset.gift);btn.classList.add("opened");btn.textContent="💖";const span=document.createElement("span");span.textContent="OPENED!";btn.appendChild(span);
+    $("giftReveal").textContent=gifts[chosenGift];$("giftReveal").classList.remove("hidden");$("endingBtn").classList.remove("hidden");
+    document.querySelectorAll(".gift").forEach(b=>b.disabled=true);
+  }));
+  $("endingBtn").addEventListener("click",()=>{syncFields();applyNames();show("ending");$("ending").scrollIntoView({behavior:"smooth",block:"start"});});
+  $("copyBtn").addEventListener("click",async()=>{try{await navigator.clipboard.writeText($("finalMessage").textContent);$("copyStatus").textContent="Copied! Paste it wherever you want, wife. ♡";}catch(e){const r=document.createRange();r.selectNodeContents($("finalMessage"));const s=window.getSelection();s.removeAllRanges();s.addRange(r);$("copyStatus").textContent="Message selected — press Copy from your browser menu."; }});
+  $("againBtn").addEventListener("click",()=>{current=0;points=0;chosenGift=null;document.querySelectorAll(".gift").forEach((b,i)=>{b.disabled=false;b.classList.remove("opened");b.innerHTML=["🎁<span>BOX ONE</span>","🎀<span>BOX TWO</span>","💝<span>BOX THREE</span>"][i];});$("giftReveal").classList.add("hidden");$("endingBtn").classList.add("hidden");show("intro");window.scrollTo({top:0,behavior:"smooth"});});
+  $("applyBtn").addEventListener("click",()=>{syncFields();applyNames();$("applyBtn").textContent="Edits applied ✓";setTimeout(()=>$("applyBtn").textContent="Apply my edits ♡",1800);});
+  $("resetEdits").addEventListener("click",()=>{Object.keys(defaults).forEach(k=>{if($(k))$(k).value=defaults[k];});syncFields();applyNames();});
+  // Initial values from editable fields
+  syncFields();applyNames();
+})();
+</script>
+</body>
+</html>
